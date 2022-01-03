@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/goods_style.scss">
-    <link rel="stylesheet" href="./scss/main_style.scss">
-    <title>Главная</title>
+    <title>Товары</title>
 </head>
 <body>
 
@@ -33,7 +32,7 @@
                     </li>
                     <li>
                         <img src="./assets/img/menu_link2.svg" alt="set">
-                        <a href="./goods.html" class="sidebar__link">Сеты</a>
+                        <a href="#" class="sidebar__link">Сеты</a>
                     </li>
                     <li>
                         <img src="./assets/img/menu_link3.svg" alt="wok">
@@ -124,72 +123,43 @@
 
             <section class="content">
 
-                <div class="content__banner banner">
+                <div class="content__top">
 
-                    <a href="">
-                        <img class="banner__image" src="./assets/img/main_banner.png" alt="banner">
-                    </a>
+                    <div class="content__title">
 
-                    <div class="banner__selector-wrapper">
-                        <div class="banner__selector"></div>
-                        <div class="banner__selector"></div>
-                        <div class="banner__selector"></div>
-                        <div class="banner__selector"></div>
-                        <div class="banner__selector"></div>
+                        <img src="./assets/img/sets_main.svg" alt="set">
+                        <h1>Сеты</h1>
+    
+                    </div>
+    
+                    <div class="content__selector selector">
+    
+                        <label class="selector__label" for="sorting-type">Сортировка</label>
+    
+                        <select class="selector__option" name="sorting-type" id="sorting-type">
+                            <option value="default">По умолчанию</option>
+                            <option value="name">Название</option>
+                            <option value="cheap">Сначала дешевле</option>
+                            <option value="expensive">Сначала дороже</option>
+                            <option value="pieces">Количество кусочков</option>
+                            <option value="weight">Вес</option>
+                        </select>
+    
                     </div>
 
                 </div>
 
-                <div class="content__menu-wrapper">
+                <div class="content__products products">
 
-                    <div class="menu-wrapper__image_chiken">
-                        <a href="#">
-                            <img src="./assets/img/content-menu1.png" alt="chiken">
-                        </a>
-                    </div>
-                    <div class="menu-wrapper__image_pizza">
-                        <a href="#">
-                            <img src="./assets/img/content-menu2.png" alt="pizza">
-                        </a>
-                    </div>
-                    <div class="menu-wrapper__image_sushi">
-                        <a href="#">
-                            <img src="./assets/img/content-menu3.png" alt="sushi">
-                        </a>
-                    </div>
-                    <div class="menu-wrapper__image_corn-dog">
-                        <a href="#">
-                            <img src="./assets/img/content-menu4.png" alt="corn-dog">
-                        </a>
-                    </div>
-                    <div class="menu-wrapper__image_sales">
-                        <a href="#">
-                            <img src="./assets/img/content-menu5.png" alt="sales">
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class="content__new-wrapper new-wrapper">
-
-                    <div class="new-wrapper__titles">
-                        <a href="">
-                            <h3>Новинки</h3>
-                        </a>
-                        <a href="">
-                            <h3>Популярное</h3>
-                        </a>
-                    </div>
-
-                    <div class="new-wrapper__menu">
+                    <div class="products__items">
 
                         <div class="products__item">
                             <div class="products__image">
-                                <img src="./assets/img/new-menu1.png" alt="set-img">
+                                <img src="./assets/img/salomon.png" alt="set-img">
                             </div>
                             <h3 class="products__name">Саломон сет</h3>
-                            <p class="products__description">1050 грамм 30 кусочков</p>
-
+                            <p class="products__description">1050 грамм, 30 кусочков</p>
+                            
                             <div class="products__purchase">
                                 <p class="products__cost">1500 СОМ</p>
                                 <button class="products__button">Хочу!</button>
@@ -199,36 +169,119 @@
 
                         <div class="products__item">
                             <div class="products__image">
-                                <img src="./assets/img/new-menu2.png" alt="set-img">
+                                <img src="./assets/img/5_philadelf.png" alt="set-img">
                             </div>
-                            <h3 class="products__name">Филадельфия и лосось сет</h3>
-                            <p class="products__description">1260 грамм 36 кусочков</p>
-    
+                            <h3 class="products__name">Сет "5 Филадельфий"</h3>
+                            <p class="products__description">1120 грамм 40 кусочков</p>
+
                             <div class="products__purchase">
-                                <p class="products__cost">1150 СОМ</p>
+                                <p class="products__cost">1499 СОМ</p>
                                 <button class="products__button">Хочу!</button>
                             </div>
-    
+
                         </div>
 
                         <div class="products__item">
                             <div class="products__image">
-                                <img src="./assets/img/new-menu3.png" alt="set-img">
+                                <img src="./assets/img/philad_salmon.png" alt="set-img">
                             </div>
-                            <h3 class="products__name">Самая большая Филадельфия</h3>
-                            <p class="products__description">2050 грамм 45 кусочков</p>
-    
+                            <h3 class="products__name">Филадельфия и лосось сет</h3>
+                            <p class="products__description">1260 грамм 36 кусочков</p>
+
                             <div class="products__purchase">
-                                <p class="products__cost">2100 СОМ</p>
+                                <p class="products__cost">1499 СОМ</p>
                                 <button class="products__button">Хочу!</button>
                             </div>
-    
+
+                        </div>
+
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="./assets/img/6_philadelf.png" alt="set-img">
+                            </div>
+                            <h3 class="products__name">Сет "6 Филадельфий"</h3>
+                            <p class="products__description">1320 грамм 46 кусочков</p>
+
+                            <div class="products__purchase">
+                                <p class="products__cost">1559 СОМ</p>
+                                <button class="products__button">Хочу!</button>
+                            </div>
+
+                        </div>
+
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="./assets/img/top_set.png" alt="set-img">
+                            </div>
+                            <h3 class="products__name">Топовый сет</h3>
+                            <p class="products__description">1020 грамм 40 кусочков</p>
+
+                            <div class="products__purchase">
+                                <p class="products__cost">1519 СОМ</p>
+                                <button class="products__button">Хочу!</button>
+                            </div>
+
+                        </div>
+
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="./assets/img/kamikadze.png" alt="set-img">
+                            </div>
+                            <h3 class="products__name">Камикадзе сет</h3>
+                            <p class="products__description">1200 грамм 52 кусочка</p>
+
+                            <div class="products__purchase">
+                                <p class="products__cost">1469 СОМ</p>
+                                <button class="products__button">Хочу!</button>
+                            </div>
+
+                        </div>
+
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="./assets/img/4_philadelf.png" alt="set-img">
+                            </div>
+                            <h3 class="products__name">Сет "4 Филадельфии"</h3>
+                            <p class="products__description">1100 грамм 32 кусочка</p>
+
+                            <div class="products__purchase">
+                                <p class="products__cost">1559 СОМ</p>
+                                <button class="products__button">Хочу!</button>
+                            </div>
+
+                        </div>
+
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="./assets/img/love_set.png" alt="set-img">
+                            </div>
+                            <h3 class="products__name">Филадельфия LOVE сет</h3>
+                            <p class="products__description">1000 грамм 40 кусочков</p>
+
+                            <div class="products__purchase">
+                                <p class="products__cost">1479 СОМ</p>
+                                <button class="products__button">Хочу!</button>
+                            </div>
+
+                        </div>
+
+                        <div class="products__item">
+                            <div class="products__image">
+                                <img src="./assets/img/yakudza.png" alt="set-img">
+                            </div>          
+                            <h3 class="products__name">Якудза сет</h3>
+                            <p class="products__description">1270 грамм 50 кусочков</p>
+
+                            <div class="products__purchase">
+                                <p class="products__cost">1499 СОМ</p>
+                                <button class="products__button">Хочу!</button>
+                            </div>
+
                         </div>
 
                     </div>
 
                 </div>
-
 
                 <div class="content__about about">
 

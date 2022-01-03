@@ -3,10 +3,12 @@
     "source": "./src/index.html",
     "scripts": {
         "start": "parcel",
-        "build": "parcel build"
+        "build": "parcel build",
+        "rebuild": "npm run clean && npm install && npm run build"
     },
     "devDependencies": {
         "@parcel/transformer-sass": "^2.0.1",
+        "node-sass": "^7.0.1",
         "parcel": "^2.0.1"
     }
 }

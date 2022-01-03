@@ -1,0 +1,128 @@
+@import './variables.scss';
+
+.content__banner {
+    margin-bottom: 30px;
+}
+
+.banner {
+    &__image {
+        margin-bottom: 10px;
+    }
+
+    &__selector-wrapper {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+    }
+
+    &__selector {
+        width: 8px;
+        height: 8px;
+        background-color: $light-gray;
+        border-radius: 100%;
+
+        &:first-of-type {
+            width: 10px;
+            height: 10px;
+            background-color: $orange;
+        }
+    }
+}
+
+.content__menu-wrapper {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 50% 25% 25%;
+    row-gap: 30px;
+    column-gap: 7px;
+    margin-bottom: 52px;
+
+    .menu-wrapper__image {
+        &_chiken {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: 'Чикен';
+                color: $white;
+                font-family: 'Raleway', sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                transform: translate(10px, 160px);
+            }
+        }
+        &_pizza {
+            position: relative;
+            grid-area: 2 / 1 / 3 / 2;
+            &::before {
+                position: absolute;
+                content: 'Пицца';
+                color: $white;
+                font-family: 'Raleway', sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                transform: translate(10px, 160px);
+            }
+        }
+        &_sushi {
+            position: relative;
+            grid-area: 1 / 2 / 2 / 3;
+            &::before {
+                position: absolute;
+                content: 'С угрем';
+                color: $white;
+                font-family: 'Raleway', sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                transform: translate(10px, 160px);
+            }
+        }
+        &_corn-dog {
+            position: relative;
+            grid-area: 1 / 3 / 2 / 4;
+            &::before {
+                position: absolute;
+                content: 'Корн-дог';
+                color: $white;
+                font-family: 'Raleway', sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                transform: translate(10px, 160px);
+            }
+        }
+        &_sales {
+            position: relative;
+            grid-area: 2 / 2 / 3 / 4;
+            &::before {
+                position: absolute;
+                content: 'Акции';
+                color: $white;
+                font-family: 'Raleway', sans-serif;
+                font-size: 24px;
+                font-weight: 500;
+                transform: translate(10px, 160px);
+            }
+        }
+    }
+}
+
+.new-wrapper {
+    margin-bottom: 50px;
+
+    &__titles {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px;
+        font-family: 'Raleway', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+
+        a:last-of-type {
+            text-decoration: underline;
+            color: $gray;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        gap: 40px;
+    }
+}
