@@ -1,0 +1,68 @@
+@import './variables.scss';
+
+.reviews {
+    margin: 50px 30px 0;
+    color: $black;
+    font-family: 'Raleway', sans-serif;
+
+    &__item {
+        background-color: $white;
+        margin-bottom: 22px;
+        padding: 10px 0 10px 10px;
+        border-radius: 5px;
+
+        &:last-of-type {
+            margin-bottom: 430px;
+        }
+    }
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &__add {
+        height: 36px;
+        width: 180px;
+        background-color: $black;
+        border-radius: 5px;
+        text-align: center;
+        color: $white;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &__person {
+        display: flex;
+        gap: 20px;
+        align-items: baseline;
+        margin-bottom: 20px;
+
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            color: $light-gray;
+        }
+    }
+
+    &__text {
+        width: 717px;
+        
+        p {
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+}
+

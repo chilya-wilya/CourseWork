@@ -123,6 +123,31 @@
 
     &__menu {
         display: flex;
+        align-items: baseline;
         gap: 40px;
+        width: 1170px;
+        margin-left: -100px;
+
+        .menu__button_left {
+            button {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                background-color: $black;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        .menu__button_right {
+            button {
+                width: 60px;
+                height: 60px;
+                border-radius: 100%;
+                background-color: $black;
+                border: none;
+                cursor: pointer;
+            }
+        }
     }
 }
