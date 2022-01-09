@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap');
+@import './variables.scss';
+
+.content {
+
+    .menu-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        &__image {
+            &_pizza {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'Пицца';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 10px);
+                }
+            }
+            &_set {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'Сеты';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 10px);
+                }
+            }
+            &_wok {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'WOK';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 10px);
+                }
+            }
+            &_rolls {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'Роллы';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 10px);
+                }
+            }
+            &_sushi {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'Суши';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 10px);
+                }
+            }
+            &_soup {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'Супы';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 10px);
+                }
+                &::after {
+                    position: absolute;
+                    content: "скоро";
+                    width: 50px;
+                    height: 15px;
+                    background-color: #EB5757;
+                    color: #fff;
+                    border-radius: 10px;
+                    z-index: 2;
+                    font-size: 11px;
+                    font-weight: 400;
+                    text-align: center;
+                    transform: translate(-60px, 14px);
+                }
+            }
+            &_salad {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'Салаты';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 10px);
+                }
+                &::after {
+                    position: absolute;
+                    content: "скоро";
+                    width: 50px;
+                    height: 15px;
+                    background-color: #EB5757;
+                    color: #fff;
+                    border-radius: 10px;
+                    z-index: 2;
+                    font-size: 11px;
+                    font-weight: 400;
+                    text-align: center;
+                    transform: translate(-60px, 14px);
+                }
+            }
+            &_drink {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'Напитки';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 10px);
+                }
+            }
+            &_combo {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'Комбо';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 110px);
+                }
+            }
+            &_eel {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'С угрем';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 100px);
+                }
+            }
+            &_corn-dog {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'Корн-дог';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 100px);
+                }
+            }
+            &_chiken {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'Чикен';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 110px);
+                }
+            }
+            &_sales {
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: 'Акции';
+                    color: $white;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 18px;
+                    font-weight: 500;
+                    transform: translate(10px, 110px);
+                }
+            }
+        }
+    }
+}
+
