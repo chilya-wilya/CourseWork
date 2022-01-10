@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/mobile-all-pages-style.scss">
+    <link rel="stylesheet" href="./scss/mobile-form-style.scss">
+    <title>Оформить заказ</title>
+</head>
+<body>
+
+    <main class="main">
+
+        <header class="header">
+
+            <a href="./mobile-main.html"><img class="logo" src="./assets/img/mobile_version/logo.png" alt="logo"></a>
+
+            <div class="header__contacts">
+
+                    <div class="header__tel">
+
+                        <p class="header__subtitle">Наш телефон</p>
+
+                        <p class="header__number">
+                            +996 705 188 955
+                        </p>
+        
+                        <p class="header__number">
+                            +996 555 188 955
+                        </p>
+
+                    </div>
+
+                    <div class="header__work-hours">
+                        <img src="./assets/img/clock.svg" alt="clock">
+                        <p>работаем <br> с 10:00 до 00:00</p> 
+                    </div>
+
+            </div>
+
+            <img class="search" src="./assets/img/Search.svg" alt="search">
+
+        </header>
+
+        <section class="content">
+
+            <h2>Ваши данные</h2>
+
+            <form class="form">
+    
+                <div class="input">
+        
+                    <input class="basic-input person-input" type="text" placeholder="Фамилия">
+                    <input class="basic-input person-input" type="text" placeholder="Имя">
+
+                </div>
+
+                <div class="input">
+        
+                    <input class="radio-base" type="radio" name="delivery-type" id="delivery" checked>
+                    <label class="basic-input radio-input right" for="delivery">Курьером</label>
+                    <input class="radio-base" type="radio" name="delivery-type" id="self-pick">
+                    <label class="basic-input radio-input left" for="self-pick">Самовывоз</label>
+
+                </div>
+
+                <div class="input adress">
+
+                    <input class="basic-input street" type="text" placeholder="Улица">
+                    <input class="basic-input house" type="text" placeholder="Дом">
+                    <div>
+                        <input class="basic-input small" type="text" placeholder="Кв">
+                        <input class="basic-input small" type="text" placeholder="Подъезд">
+                    </div>
+                    <div>
+                        <input class="basic-input small" type="text" placeholder="Этаж">
+                        <input class="basic-input small" type="text" placeholder="Код">
+                    </div>
+
+                </div>
+
+
+                <div class="input">
+
+                    <input class="radio-base" type="radio" name="pay-type" id="cash" checked>
+                    <label class="basic-input radio-input right" for="cash">
+                        <img class="vallet" src="./assets/img/cash.svg" alt="cash">
+                        Наличными
+                    </label>
+                    <input class="radio-base" type="radio" name="pay-type" id="money">
+                    <label class="basic-input radio-input left" for="money">
+                        <img class="card" src="./assets/img/card.svg" alt="card">
+                        Картой
+                    </label>
+
+                </div>
+
+                <div class="input change-input">
+
+                    <input class="checkbox-input" type="checkbox" id="change">
+                    <label class="basic-input label" for="change">Подготовить сдачу с</label>
+                    <input class="summ-input basic-input" type="text" name="change-summ" placeholder="Сумма">
+
+                </div>
+
+                <div class="input">
+
+                    <input class="basic-input big-input" type="text" placeholder="E-mail (необязательно)">
+
+                </div>
+
+                <div class="input">
+
+                    <input class="basic-input big-input" type="text" placeholder="Коммантарий к заказу">
+
+                </div>
+
+                <div class="input">
+
+                    <input class="radio-base" type="radio" name="delivery-time" id="now" checked>
+                    <label class="basic-input radio-input right" for="now">На сейчас</label>
+                    <input class="radio-base" type="radio" name="delivery-time" id="postpone">
+                    <label class="basic-input radio-input left" for="postpone">На время</label>
+
+                </div>
+
+                <div class="input">
+
+                    <div class="input input-option-first">
+
+                        <span class="add-option">Палочки + соусник обычные</span>
+
+                        <button class="minus">-</button>
+                        <input class="add-option-summ" type="number" name="add-option-summ" placeholder="10" disabled>
+                        <button class="plus"></button>
+                        
+                    </div>
+
+                </div>
+                
+                <div class="input input-option-second">
+
+                    <div class="input">
+
+                        <span class="add-option">Палочки + соусник обычные</span>
+
+                        <button class="minus">-</button>
+                        <input class="add-option-summ" type="number" name="add-option-summ" placeholder="10" disabled>
+                        <button class="plus"></button>
+                        
+                    </div>
+
+                </div>
+
+                <div class="input">
+
+                    <input class="basic-input big-input" type="text" placeholder="Введите промокод">
+
+                </div>
+
+            </div>
+
+            <div class="cart">
+
+                <div class="cart__point">
+                    <span>1 товар</span>
+                    <span class="bold">170 СОМ</span>
+                </div>
+
+                <div class="cart__line"></div>
+
+                <div class="cart__point">
+                    <span>Скидка</span>
+                    <span class="bold">0 СОМ</span>
+                </div>
+
+                <div class="cart__line"></div>
+
+                <div class="cart__point">
+                    <span>Доставка</span>
+                    <span class="bold">Бесплатно</span>
+                </div>
+
+                <div class="cart__line"></div>
+
+                <div class="cart__point orange">
+                    <span>Итого</span>
+                    <span>170 СОМ</span>
+                </div>
+
+                <div class="cart__line"></div>
+
+            </div>
+
+                <button class="basic-input submit-button" type="submit">Оформить заказ</button>
+    
+            </form>
+
+
+        </section>
+
+        <footer class="footer">
+
+            <div class="footer__item">
+                <img src="./assets/img/mobile_version/mobile-footer-menu.svg" alt="menu">
+                <a href="./mobile-main.html"><p>Меню</p></a>
+            </div>
+
+
+            <div class="footer__item">
+                <img src="./assets/img/mobile_version/mobile-footer-cart.svg" alt="cart">
+                <a href="./mobile-cart.html"><p>Корзина</p></a>
+            </div>
+
+
+            <div class="footer__item">
+                <img src="./assets/img/mobile_version/mobile-footer-reviews.svg" alt="reviews">
+                <a href="./mobile-reviews.html"><p>Отзывы</p></a>
+            </div>
+
+        </footer>
+
+    </main>
+    
+</body>
+</html>
